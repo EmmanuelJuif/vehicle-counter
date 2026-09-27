@@ -1,0 +1,19 @@
+# Coeur
+ultralytics>=8.1.0        # YOLOv8 + ByteTrack
+torch>=2.0                # voir https://pytorch.org pour la version CUDA de votre machine
+torchvision>=0.15
+opencv-python>=4.8
+numpy>=1.24,<2.3
+
+# Optionnels mais recommandés pour ByteTrack
+lap>=0.5.0                # association linéaire rapide
+filterpy>=1.4.5           # filtre de Kalman
+
+# Sorties / rapports
+pandas>=2.0
+
+# Évaluation MOT (tools/eval_mot.py, CI tools/regression.py)
+motmetrics>=1.4           # MOTA / IDF1 / IDSW aux normes MOTChallenge
+
+# Accélération CPU (optionnelle — poids yolov8s_openvino_model)
+openvino>=2023.1

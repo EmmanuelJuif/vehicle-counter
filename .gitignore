@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Données / sorties (reproductibles via tools/)
+data/
+out/
+*.mp4
+
+# Poids & modèles (reproductibles : yolov8s.pt téléchargeable, OpenVINO via export)
+*.pt
+*.bin
+*.onnx
+*.engine
+*.torchscript
+yolov8s_openvino_model/
+runs/
+
+# Binaires tiers (retéléchargés par tools/rtsp_server.py --install)
+tools/rtsp/
+*.exe
+*.zip
+
+# Chemins locaux spécifiques à la machine
+.ffmpeg_path
